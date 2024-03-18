@@ -943,8 +943,8 @@ export async function handler(chatUpdate) {
         if (!('modohorny' in chat)) chat.modohorny = false;
         if (!('autosticker' in chat)) chat.autosticker = false;
         if (!('audios' in chat)) chat.audios = false;
-        if (!('antiLink' in chat)) chat.antiLink = false;
-        if (!('antiLink2' in chat)) chat.antiLink2 = false;
+        if (!('antiLink' in chat)) chat.antiLink = true;
+        if (!('antiLink2' in chat)) chat.antiLink2 = true;
         if (!('antiviewonce' in chat)) chat.antiviewonce = false;
         if (!('antiToxic' in chat)) chat.antiToxic = false;
         if (!('antiTraba' in chat)) chat.antiTraba = false;
@@ -968,8 +968,8 @@ export async function handler(chatUpdate) {
           modohorny: true,
           autosticker: false,
           audios: true,
-          antiLink: false,
-          antiLink2: false,
+          antiLink: true,
+          antiLink2: true,
           antiviewonce: false,
           antiToxic: false,
           antiTraba: false,
@@ -1535,16 +1535,16 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-    rowner: '*[ ℹ️ ] This command can only be used by the bot owner.*',
-    owner: '*[ ℹ️ ] This command can only be used by the bot owner.*',
-    mods: '*[ ℹ️ ] This command can only be used by moderators and the bot owner.*',
-    premium: '*[ ℹ️ ] This command can only be used by premium users and the bot owner.*',
-    group: '*[ ℹ️ ] This command can only be used in groups.*',
-    private: '*[ ℹ️ ] This command can only be used in the bot s private chat.*',
-    admin: '*[ ℹ️ ] This command can only be used by group administrators.*',
-    botAdmin: '*[ ℹ️ ] To use this command it is necessary that the bot be an administrator of the group.*',
-    unreg: '*[ ℹ️ ] To use this command you must be registered.*\n\n*[ 💡 ] Use the command:* _#verify name.age_ *to register.*',
-    restrict: '*[ ℹ️ ] This command was disabled by the bot owner.*',
+    rowner: '*فقط المالك* • يمكن استخدام هذا الأمر فقط من قبل *مالك البوت*',
+        owner: '*فقط المالك* • يمكن استخدام هذا الأمر فقط من قبل *مالك البوت*',
+        mods: '*فقط المشرفين* • هذه الوظيفة مخصصة فقط لـ *مشرفي البوت*',
+        premium: '*فقط للمشتركين المميزين* • يمكن استخدام هذا الأمر فقط من قبل *أعضاء مميزين*',
+        group: '*دردشة جماعية* • يمكن استخدام هذا الأمر فقط في المجموعات',
+        private: '*دردشة خاصة* • يمكن استخدام هذا الأمر فقط في *الدردشة الخاصة للبوت*',
+        admin: '*فقط المشرفين* • هذا الأمر مخصص فقط لـ *مشرفي المجموعة*',
+        botAdmin: '*فقط مشرف البوت* • يجب أن أكون *مشرفًا* لاستخدام هذا الأمر',
+        unreg: '*أنت غير مسجل بعد* • سجّل الدخول لاستخدام هذه الميزة عبر كتابة:\n\n*/تسجيل الاسم.العمر*\n\n📌مثال: */تسجيل Mohamed.20*',
+        restrict: '*القيود معطلة* • هذه الميزة *معطلة*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
   const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '*[ ⚠ ] Warning*', body: 'ELFARA3NABOT', thumbnail: imagen1, sourceUrl: 'https://instagram.com/mo_shoker'}}}}, aa);
