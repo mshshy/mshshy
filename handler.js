@@ -93,7 +93,7 @@ export async function handler(chatUpdate) {
         }
         if (!isNumber(user.afk)) user.afk = -1;
 	        if (!('autolevelup' in user)) user.autolevelup = true;
-	        if (!('الدور' في المستخدم)) user.role = 'Novato';
+	        if (!('role' in user)) user.role = 'Novato';
         if (!isNumber(user.agility)) user.agility = 0;
         if (!isNumber(user.anakanjing)) user.anakanjing = 0;
         if (!isNumber(user.anakcentaur)) user.anakcentaur = 0;
@@ -108,7 +108,7 @@ export async function handler(chatUpdate) {
         if (!isNumber(user.anakserigala)) user.anakserigala = 0;
         if (!isNumber(user.anggur)) user.anggur = 0;
         if (!isNumber(user.anjing)) user.anjing = 0;
-        if (!isNumber(user.anjinglastclaim)) user.anjinlastclaim = 0;
+        if (!isNumber(user.anjinglastclaim)) user.anjinglastclaim = 0;
         if (!isNumber(user.antispam)) user.antispam = 0;
         if (!isNumber(user.antispamlastclaim)) user.antispamlastclaim = 0;
         if (!isNumber(user.apel)) user.apel = 0;
@@ -120,7 +120,7 @@ export async function handler(chatUpdate) {
         if (!isNumber(user.armordurability)) user.armordurability = 0;
         if (!isNumber(user.armormonster)) user.armormonster = 0;
         if (!isNumber(user.as)) user.as = 0;
-        إذا (!isNumber(user.atm)) user.atm = 0;
+        if (!isNumber(user.atm)) user.atm = 0;
         if (!isNumber(user.axe)) user.axe = 0;
         if (!isNumber(user.axedurability)) user.axedurability = 0;
         if (!isNumber(user.ayam)) user.ayam = 0;
@@ -488,131 +488,131 @@ export async function handler(chatUpdate) {
         if (!isNumber(user.wolflastfeed)) user.wolflastfeed = 0;
         if (!isNumber(user.wood)) user.wood = 0;
         if (!isNumber(user.wortel)) user.wortel = 0;
-        if (!user.lbars) user.lbars = '[â–’â–’â–’â–’â–’â–’â–’â–’â–’]';
-        if (!user.job) user.job = 'Desempeo';
-        إذا (!user.premium) user.premium = false;
-        إذا (!user.premium) user.premiumTime = 0;
-        إذا (!user.wait) user.wait = 0;
-        إذا (!user.rtrofi) user.rtrofi = 'Bronce';
-      } آخر {
+        if (!user.lbars) user.lbars = '[▒▒▒▒▒▒▒▒▒]';
+        if (!user.job) user.job = 'Desempleo';
+        if (!user.premium) user.premium = false;
+        if (!user.premium) user.premiumTime = 0;
+        if (!user.wait) user.wait = 0;
+        if (!user.rtrofi) user.rtrofi = 'Bronce';
+      } else {
         global.db.data.users[m.sender] = {
-		    أفك: -1،
-		    الانتظار: 0،
-          AFKالسبب: ''،
-          العمر: -1،
-          خفة الحركة: 16،
-          اناكانجينج: 0،
-          اناكسينتور: 0,
-          أناكغريفين: 0،
-          الانقراض: 0،
-          اناكودا: 0،
-          أناكيوبي: 0،
-          أناكناغا: 0،
-          أناكبانسينجان: 0،
-          اناكفونيكس: 0،
-          اناكروباه: 0،
-          أناكسيريجالا: 0,
-          أنجور: 0,
-          انجينج: 0،
-          أنجينجلاستكليم: 0,
-          مكافحة البريد العشوائي: 0,
-          مكافحة البريد العشوائي: 0،
-          أبل: 0،
-          أكوا: 0،
-          القوس: 0،
-          متانة القوس: 0,
-          ارلوك: 0,
-          الدرع: 0،
-          متانة الدروع: 0
-          وحش الدروع: 0,
-          مثل: 0،
-          أجهزة الصراف الآلي: 0،
-          المستوى التلقائي: صحيح،
-          الفأس: 0،
-          القدرة على التحمل: 0،
-          أيام: 0،
-          أيامب: 0،
-          أيامبكار: 0،
-          أيامج: 0,
-          أيامغورينغ: 0،
-          بابي: 0،
-          بابيههوتان: 0،
-          بابيبانغانغ: 0،
-          ضمادة: 0،
-          البنك: 0،
-          المحظورة: كاذبة،
-          سبب الحظر: ''،
-          المستخدم المحظور: خطأ،
-          بانتنغ: 0،
-          باتو: 0،
-          بوال: 0،
-          بوالباكر: 0،
-          بيام: 0،
-          برلين: 10،
-          بيبيتانجور: 0،
-          ثنائي البيتابيل: 0،
-          بيبيتجيروك: 0،
-          بيبيتمانغا: 0،
-          بيبيتبيسانغ: 0،
-          بوتول: 0،
-          القوس: 0،
-          متانة القوس: 0,
-          الصناديق: 0،
-          الطوب: 0،
-          بروكولي: 0،
-          بويا: 0،
-          بونتال: 0،
-          القط: 0،
-          تغذية القطط: 0,
-          كاتنجكسب: 0،
-          سنتور: 0،
-          سنتوريكس: 0،
-          مطالبة القنطور: 0،
-          تغذية القنطور: 0،
-          الطين: 0،
-          الفحم: 0،
-          العملة: 0،
-          مشترك: 0،
-          الكريستال: 0،
-          كومي: 0،
-          كوبون: 0،
-          الماس: 3،
-          الكلب: 0،
-          تجربة الكلب: 0,
-          دوجلاستفيد: 0,
-          دوري: 0،
-          التنين: 0،
-          دراجون إكسب: 0،
-          آخر تغذية التنين: 0,
-          إيماس: 0،
-          الزمرد: 0،
-          إستيه: 0,
-          الخبرة: 0،
-          إكسبج: 0،
-          اكسفيرو: 0،
-          منتهية الصلاحية: 0،
-		    الإكسيرب: 0,
-		    إيماسباتانج: 0،
-		    ماسبياسا: 0,
-		    الفيديوهات: 0,
-          صنارة الصيد: 0,
-          متانة الصيد: 0,
-          القلعة: 0،
-          الثعلب: 0،
-          فوكس إكسب: 0،
-          تغذية الثعلب: 0،
-          كامل: 0،
-          جدودادو: 0،
-          جاجا: 0،
-          مناجم الألعاب: كاذبة،
-          غانجا: 0،
-          صناديق الحدائق: 0,
-          الأحجار الكريمة: 0،
-          الزجاج: 0،
-          الذهب: 0،
-          غريفين: 0،
-          غريفينيكس: 0،
-          غريفينلاست كليم: 0,
+		    afk: -1,
+		    wait: 0,
+          afkReason: '',
+          age: -1,
+          agility: 16,
+          anakanjing: 0,
+          anakcentaur: 0,
+          anakgriffin: 0,
+          anakkucing: 0,
+          anakkuda: 0,
+          anakkyubi: 0,
+          anaknaga: 0,
+          anakpancingan: 0,
+          anakphonix: 0,
+          anakrubah: 0,
+          anakserigala: 0,
+          anggur: 0,
+          anjing: 0,
+          anjinglastclaim: 0,
+          antispam: 0,
+          antispamlastclaim: 0,
+          apel: 0,
+          aqua: 0,
+          arc: 0,
+          arcdurability: 0,
+          arlok: 0,
+          armor: 0,
+          armordurability: 0,
+          armormonster: 0,
+          as: 0,
+          atm: 0,
+          autolevelup: true,
+          axe: 0,
+          axedurability: 0,
+          ayam: 0,
+          ayamb: 0,
+          ayambakar: 0,
+          ayamg: 0,
+          ayamgoreng: 0,
+          babi: 0,
+          babihutan: 0,
+          babipanggang: 0,
+          bandage: 0,
+          bank: 0,
+          banned: false,
+          BannedReason: '',
+          Banneduser: false,
+          banteng: 0,
+          batu: 0,
+          bawal: 0,
+          bawalbakar: 0,
+          bayam: 0,
+          berlian: 10,
+          bibitanggur: 0,
+          bibitapel: 0,
+          bibitjeruk: 0,
+          bibitmangga: 0,
+          bibitpisang: 0,
+          botol: 0,
+          bow: 0,
+          bowdurability: 0,
+          boxs: 0,
+          brick: 0,
+          brokoli: 0,
+          buaya: 0,
+          buntal: 0,
+          cat: 0,
+          catlastfeed: 0,
+          catngexp: 0,
+          centaur: 0,
+          centaurexp: 0,
+          centaurlastclaim: 0,
+          centaurlastfeed: 0,
+          clay: 0,
+          coal: 0,
+          coin: 0,
+          common: 0,
+          crystal: 0,
+          cumi: 0,
+          cupon: 0,
+          diamond: 3,
+          dog: 0,
+          dogexp: 0,
+          doglastfeed: 0,
+          dory: 0,
+          dragon: 0,
+          dragonexp: 0,
+          dragonlastfeed: 0,
+          emas: 0,
+          emerald: 0,
+          esteh: 0,
+          exp: 0,
+          expg: 0,
+          exphero: 0,
+          expired: 0,
+		    eleksirb: 0,
+		    emasbatang: 0,
+		    emasbiasa: 0,
+		    fideos: 0,
+          fishingrod: 0,
+          fishingroddurability: 0,
+          fortress: 0,
+          fox: 0,
+          foxexp: 0,
+          foxlastfeed: 0,
+          fullatm: 0,
+          gadodado: 0,
+          gajah: 0,
+          gamemines: false,
+          ganja: 0,
+          gardenboxs: 0,
+          gems: 0,
+          glass: 0,
+          gold: 0,
+          griffin: 0,
+          griffinexp: 0,
+          griffinlastclaim: 0,
           griffinlastfeed: 0,
           gulai: 0,
           gurita: 0,
@@ -733,125 +733,125 @@ export async function handler(chatUpdate) {
           lastopen: 0,
           lastpekerjaan: 0,
 		    lastpago: 0,
-          مطالبة الجرعة الأخيرة: 0،
-          المطالبة الأخيرة: 0،
-	            آخر البريد العشوائي: 0,
-          آخر روب: 0،
-          آخر ضربة: 0،
-          آخر ظهور: 0،
-          حالة LastSet: 0،
-          LastSironclaim: 0,
-          مطالبة Lastsmancing: 0,
-          مطالبة السلسلة الأخيرة: 0،
-          مطالبة الكلمة الأخيرة: 0،
-          المدة الأخيرة: 0،
-          آخر حرب: 0,
-          آخر سلاح: 0,
-          الأسبوع الماضي: 0،
-          العمل الأخير: 0،
-          lbars: '[â–'â–'â–'â–'â–'â–'â–'â–'â–']'،
-          الأسطوري: 0،
-          ليلي: 0،
-          ليليب: 0،
-          ليليباكار: 0،
-          الساق: 0،
-          المستوى: 0،
-          الحد: 20،
-          الحد من الانضمام مجانًا: 1،
-          الأسد: 0،
-          ليون إكسب: 0,
-          آخر تغذية للأسد: 0,
-          جراد البحر: 0،
-          لومبا: 0،
-          العصا السحرية: 0,
-          المتانة السحرية: 0,
-          مكانان: 0،
-          مكانانسنتور: 0،
-          ماكانانجريفين: 0،
-          مكانانكيوبي: 0،
-          مكاناناغا: 0،
-          ماكانانبيت: 0،
-          ماكانانفونيكس: 0،
-          مكانان سيريجالا: 0،
-          مانا: 20،
-          مانغا: 0،
-          ميسي: ''،
-          المال: 15،
-          مونيت: 0،
-          أسطوري: 0،
-          النجا: 0،
-          مطالبة ناجالاست: 0،
-          الاسم: م.اسم،
-          صافي: 0،
-          نيلا: 0،
-          نيلاباكار: 0،
-          ملاحظة: 0،
-          أوجيك: 0،
-          أوبرايام: 0،
-          أوركا: 0،
-          بانسينجان: 1،
-          الباندا: 0،
-          باسانغان: ''،
-          وقفة: 0،
-          بوسباكار: 0،
-          جهاز الكمبيوتر: 0،
-          بيبيسيكان: 0،
-          الحيوانات الأليفة: 0،
-          فونيكس: 0،
-          فونيكس إكسب: 0،
-          مطالبة فونيكسلاست: 0،
-          آخر تغذية فونيكس: 0,
-          معول: 0،
-          متانة الالتقاط: 0،
-          البطل: 0,
-          بيسانغ: 0،
-          بوينت اكس بي: 0،
-          جرعة: 10،
-          قسط: كاذبة،
-          قسط الوقت: 0،
-          راموان: 0،
-          راموانسينتورلاست: 0،
-          راموانجرفينلاست: 0,
-          راموانهيرولاست: 0،
-          راموانكوتسينجلاست: 0,
-          راموانكودالاست: 0،
-          راموانكيوبيلاست: 0،
-          رامواناغالاست: 0،
-          راموانفونيكسلاست: 0،
-          راموانروباهلاست: 0،
-          راموانسيرغالالاست: 0،
-          مسجل: كاذب،
-          التسجيل: 0,
-          وقت التسجيل: -1،
-          ريندانغ: 0،
-          وحيد القرن: 0،
-          وحيد القرن: 0،
-          آخر تغذية لوحيد القرن: 0،
-          صخرة: 0،
-          روكيت: 0،
-          الدور: نوفاتو،
-          روتي: 0،
-          رتروفي: "برونزي"،
-          ربا: 0،
-          روبالالاستليم: 0,
-          روماهاساكيت: 0،
-          سامباه: 0،
-          الرمال: 0،
-          سابي: 0،
-          سابير: 0،
-          سيدبايام: 0،
-          سيدربروكولي: 0،
-          بذرة: 0،
-          بذور كانجكونج: 0,
-          بذرة: 0,
-          بذور كوبيس: 0،
-          سيدلابو: 0،
-          بذور الطماطم: 0،
-          أعشاب البذور: 0،
-          سيمانغكا: 0،
-          سيريجالا: 0،
-          المطالبة التسلسلية: 0،
-          سيوا: كاذبة،
+          lastpotionclaim: 0,
+          lastramuanclaim: 0,
+	            lastspam: 0,
+          lastrob: 0,
+          lastroket: 0,
+          lastseen: 0,
+          lastSetStatus: 0,
+          lastsironclaim: 0,
+          lastsmancingclaim: 0,
+          laststringclaim: 0,
+          lastswordclaim: 0,
+          lastturu: 0,
+          lastwarpet: 0,
+          lastweaponclaim: 0,
+          lastweekly: 0,
+          lastwork: 0,
+          lbars: '[▒▒▒▒▒▒▒▒▒]',
+          legendary: 0,
+          lele: 0,
+          leleb: 0,
+          lelebakar: 0,
+          leleg: 0,
+          level: 0,
+          limit: 20,
+          limitjoinfree: 1,
+          lion: 0,
+          lionexp: 0,
+          lionlastfeed: 0,
+          lobster: 0,
+          lumba: 0,
+          magicwand: 0,
+          magicwanddurability: 0,
+          makanan: 0,
+          makanancentaur: 0,
+          makanangriffin: 0,
+          makanankyubi: 0,
+          makanannaga: 0,
+          makananpet: 0,
+          makananphonix: 0,
+          makananserigala: 0,
+          mana: 20,
+          mangga: 0,
+          misi: '',
+          money: 15,
+          monyet: 0,
+          mythic: 0,
+          naga: 0,
+          nagalastclaim: 0,
+          name: m.name,
+          net: 0,
+          nila: 0,
+          nilabakar: 0,
+          note: 0,
+          ojekk: 0,
+          oporayam: 0,
+          orca: 0,
+          pancingan: 1,
+          panda: 0,
+          pasangan: '',
+          paus: 0,
+          pausbakar: 0,
+          pc: 0,
+          pepesikan: 0,
+          pet: 0,
+          phonix: 0,
+          phonixexp: 0,
+          phonixlastclaim: 0,
+          phonixlastfeed: 0,
+          pickaxe: 0,
+          pickaxedurability: 0,
+          pillhero: 0,
+          pisang: 0,
+          pointxp: 0,
+          potion: 10,
+          premium: false,
+          premiumTime: 0,
+          ramuan: 0,
+          ramuancentaurlast: 0,
+          ramuangriffinlast: 0,
+          ramuanherolast: 0,
+          ramuankucinglast: 0,
+          ramuankudalast: 0,
+          ramuankyubilast: 0,
+          ramuannagalast: 0,
+          ramuanphonixlast: 0,
+          ramuanrubahlast: 0,
+          ramuanserigalalast: 0,
+          registered: false,
+          reglast: 0,
+          regTime: -1,
+          rendang: 0,
+          rhinoceros: 0,
+          rhinocerosexp: 0,
+          rhinoceroslastfeed: 0,
+          rock: 0,
+          roket: 0,
+          role: 'Novato',
+          roti: 0,
+          rtrofi: 'bronce',
+          rubah: 0,
+          rubahlastclaim: 0,
+          rumahsakit: 0,
+          sampah: 0,
+          sand: 0,
+          sapi: 0,
+          sapir: 0,
+          seedbayam: 0,
+          seedbrokoli: 0,
+          seedjagung: 0,
+          seedkangkung: 0,
+          seedkentang: 0,
+          seedkubis: 0,
+          seedlabu: 0,
+          seedtomat: 0,
+          seedwortel: 0,
+          semangka: 0,
+          serigala: 0,
+          serigalalastclaim: 0,
+          sewa: false,
           shield: 0,
           skill: '',
           skillexp: 0,
@@ -943,9 +943,9 @@ export async function handler(chatUpdate) {
         if (!('modohorny' in chat)) chat.modohorny = false;
         if (!('autosticker' in chat)) chat.autosticker = false;
         if (!('audios' in chat)) chat.audios = false;
-        if (!('antiLink' in chat)) chat.antiLink = true;
-        if (!('antiLink2' in chat)) chat.antiLink2 = true;
-        if (!('antiviewonce' in chat)) chat.antiviewonce = true;
+        if (!('antiLink' in chat)) chat.antiLink = false;
+        if (!('antiLink2' in chat)) chat.antiLink2 = false;
+        if (!('antiviewonce' in chat)) chat.antiviewonce = false;
         if (!('antiToxic' in chat)) chat.antiToxic = false;
         if (!('antiTraba' in chat)) chat.antiTraba = false;
         if (!('antiArab' in chat)) chat.antiArab = false;
@@ -968,8 +968,8 @@ export async function handler(chatUpdate) {
           modohorny: true,
           autosticker: false,
           audios: true,
-          antiLink: true,
-          antiLink2: true,
+          antiLink: false,
+          antiLink2: false,
           antiviewonce: false,
           antiToxic: false,
           antiTraba: false,
@@ -1020,70 +1020,70 @@ export async function handler(chatUpdate) {
     if (opts['pconly'] && m.chat.endsWith('g.us')) {
       return;
     }
-    إذا (opts['gconly'] && !m.chat.endsWith('g.us')) {
-      يعود؛
+    if (opts['gconly'] && !m.chat.endsWith('g.us')) {
+      return;
     }
-    إذا (opts['swonly'] && m.chat !== 'status@broadcast') {
-      يعود؛
+    if (opts['swonly'] && m.chat !== 'status@broadcast') {
+      return;
     }
-    إذا (نوع m.text !== 'سلسلة') {
-      م.نص = '';
+    if (typeof m.text !== 'string') {
+      m.text = '';
     }
-    const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map((v) => v.replace(/[ ^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender);
+    const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map((v) => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender);
     const isOwner = isROwner || m.fromMe;
     const isMods = isOwner || global.mods.map((v) => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender);
-    const isPrems = isROwner || المالك || isMods || global.db.data.users[m.sender].premiumTime > 0; // || global.db.data.users[m.sender].premium = 'true'
+    const isPrems = isROwner || isOwner || isMods || global.db.data.users[m.sender].premiumTime > 0; // || global.db.data.users[m.sender].premium = 'true'
 
-    إذا (opts['queque'] && m.text && !(isMods || isPrems)) {
-      const queque = this.msgqueque; الوقت الثابت = 1000 * 5؛
-      المعرف السابق الثابت = queque[queque. length - 1];
+    if (opts['queque'] && m.text && !(isMods || isPrems)) {
+      const queque = this.msgqueque; const time = 1000 * 5;
+      const previousID = queque[queque.length - 1];
       queque.push(m.id || m.key.id);
-      setInterval(وظيفة غير متزامنة() {
-        إذا (queque.indexOf(previousID) === -1) ClearInterval(this);
-        انتظر التأخير (الوقت) ؛
-      }، وقت)؛
+      setInterval(async function() {
+        if (queque.indexOf(previousID) === -1) clearInterval(this);
+        await delay(time);
+      }, time);
     }
 
-    إذا (م.isBaileys) {
-      يعود؛
+    if (m.isBaileys) {
+      return;
     }
     m.exp += Math.ceil(Math.random() * 10);
 
-    دع usePrefix;
+    let usedPrefix;
     const _user = global.db.data && global.db.data.users && global.db.data.users[m.sender];
 
-    const groupMetadata = (m.isGroup ? ((conn.chats[m.chat] || {}).metadata || انتظار this.groupMetadata(m.chat).catch((_) => null)) : {} ) || {};
-    المشاركون الثابتون = (m.isGroup ? groupMetadata.participants : []) || []؛
-    const user = (m.isGroup ?مشاركين.find((u) => conn.decodeJid(u.id) === m.sender) : {}) || {}; // بيانات المستخدم
-    const bot = (m.isGroup ?مشاركين.find((u) => conn.decodeJid(u.id) == this.user.jid) : {}) || {}; // معلوماتك
-    const isRAdmin = user?.admin == 'superadmin' || خطأ شنيع؛
-    const isAdmin = isRAdmin || المستخدم؟.admin == 'admin' || خطأ شنيع؛ // هل المستخدم مسؤول؟
-    const isBotAdmin = bot?.admin || خطأ شنيع؛ // هل أنت مشرف؟
+    const groupMetadata = (m.isGroup ? ((conn.chats[m.chat] || {}).metadata || await this.groupMetadata(m.chat).catch((_) => null)) : {}) || {};
+    const participants = (m.isGroup ? groupMetadata.participants : []) || [];
+    const user = (m.isGroup ? participants.find((u) => conn.decodeJid(u.id) === m.sender) : {}) || {}; // User Data
+    const bot = (m.isGroup ? participants.find((u) => conn.decodeJid(u.id) == this.user.jid) : {}) || {}; // Your Data
+    const isRAdmin = user?.admin == 'superadmin' || false;
+    const isAdmin = isRAdmin || user?.admin == 'admin' || false; // Is User Admin?
+    const isBotAdmin = bot?.admin || false; // Are you Admin?
 
     const ___dirname = path.join(path.dirname(fileURLToPath(import.meta.url)), './plugins');
-    لـ (اسم ثابت في global.plugins) {
+    for (const name in global.plugins) {
       const plugin = global.plugins[name];
-      إذا (! البرنامج المساعد) {
-        يكمل؛
+      if (!plugin) {
+        continue;
       }
-      إذا (البرنامج المساعد. معطل) {
-        يكمل؛
+      if (plugin.disabled) {
+        continue;
       }
-      const __filename = join(____dirname, name);
-      إذا (typeof plugin.all === 'function') {
-        يحاول {
-          في انتظار plugin.all.call(this, m, {
-            تحديث الدردشة,
-            __اسم الاسم: ___اسم الاسم،
-            __اسم الملف،
+      const __filename = join(___dirname, name);
+      if (typeof plugin.all === 'function') {
+        try {
+          await plugin.all.call(this, m, {
+            chatUpdate,
+            __dirname: ___dirname,
+            __filename,
           });
-        } قبض (ه) {
-          // إذا استمر (typeof e === 'string').
+        } catch (e) {
+          // if (typeof e === 'string') continue
           console.error(e);
           /* for (const [jid] of global.reportes_solicitudes.filter(([number]) => number)) {
-            بيانات ثابتة = (تنتظر conn.onWhatsApp(jid))[0] || {};
-            إذا (البيانات موجودة) {
-              await m.reply(`*[ âڑ ï¸ڈ ً‌ڑپً‌™´ً‌™؟ً‌™¾ً‌ڑپً‌ڑƒً‌™´ ً‌™³ً‌™´ ً‌™²ً‌™¾ً‌™¼ً‌™°ً‌™½ً‌™³ً‌™¾ ً‌™²ً‌™¾ً‌™½ ً‌™µً‌™°ً‌™»ً‌™»ً‌™¾ً‌ڑ‚ âڑ ï¸ڈ ]*\n\n*â€”â—‰ ً‌™؟ً‌™»ً‌ڑ„ً‌™¶ً‌™¸ً‌™½:* ${name}\n*â€”â—‰ ً‌ڑ„ً‌ڑ‚ً‌ڑ„ً‌™°ً‌ڑپً‌™¸ً‌™¾:* ${m.sender}\n*â€”â—‰ ً‌™²ً‌™¾ً‌™¼ً‌™°ً‌™½ً‌™³ً‌™¾:* ${m.text}\n\n*â€”â—‰ ً‌™´ً‌ڑپً‌ڑپً‌™¾ً‌ڑپ:*\n\`\`\`${format(e)}\`\`\`\n\n*[â‌—] ً‌ڑپً‌™´ً‌™؟ً‌™¾ً‌ڑپً‌ڑƒً‌™´ً‌™»ً‌™¾ ً‌™°ً‌™» ً‌™²ً‌ڑپً‌™´ً‌™°ً‌™³ً‌™¾ً‌ڑپ ً‌™³ً‌™´ً‌™» ً‌™±ً‌™¾ً‌ڑƒ ً‌™؟ً‌™°ً‌ڑپً‌™° ً‌™³ً‌™°ً‌ڑپً‌™»ً‌™´ ً‌ڑ„ً‌™½ً‌™° ً‌ڑ‚ً‌™¾ً‌™»ً‌ڑ„ً‌™²ً‌™¸ً‌™¾ً‌™½, ً‌™؟ً‌ڑ„ً‌™´ً‌™³ً‌™´ ً‌ڑ„ً‌ڑ‚ً‌™°ً‌ڑپ ً‌™´ً‌™» ً‌™²ً‌™¾ً‌™¼ً‌™°ً‌™½ً‌™³ً‌™¾ #reporte*`.trim(), data.jid);
+            const data = (await conn.onWhatsApp(jid))[0] || {};
+            if (data.exists) {
+              await m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${name}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${m.text}\n\n*—◉ 𝙴𝚁𝚁𝙾𝚁:*\n\`\`\`${format(e)}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid);
             }
           }*/
           const md5c = fs.readFileSync('./plugins/' + m.plugin);
@@ -1179,12 +1179,12 @@ export async function handler(chatUpdate) {
             if (user.bannedMessageCount < 3) {
               const messageNumber = user.bannedMessageCount + 1;
 const messageText = `
-â•”â•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•—
- â‌° âڑ ï¸ڈ â‌± *USER BANNED!* â‌° âڑ ï¸ڈ â‌±
-â€”â—‰ *Notice ${messageNumber}/3 (Total: 3)*
-â€”â—‰ Reason ${user.bannedReason ? `\n*:* ${user.bannedReason}` : '*Reason:* Unspecified'}
-â€”â—‰ *ط¥ط°ط§ ظƒظ†طھ طھط¹طھظ‚ط¯ ط£ظ† ظ‡ط°ط§ ط®ط·ط£ ظˆظ„ط¯ظٹظƒ ط¯ظ„ظٹظ„طŒ ظپظٹظ…ظƒظ†ظƒ ط§ظ„ط§طھطµط§ظ„ ط¨ظ…ط§ظ„ظƒ ط§ظ„ط±ظˆط¨ظˆطھ ظ„ط§ط³طھط¦ظ†ط§ظپ ط§ظ„طھط¹ظ„ظٹظ‚.* â€”â—‰ *ط§ظ„طھظˆط§طµظ„ ظ…ط¹ ظ…ط§ظ„ظƒظ‡:* wa.me/201067684684
-â•ڑâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•‌
+╔═════════════════════╗
+ ❰ ⚠️ ❱ *USER BANNED!* ❰ ⚠️ ❱
+—◉ *Notice ${messageNumber}/3 (Total: 3)*
+—◉ Reason ${user.bannedReason ? `\n*:* ${user.bannedReason}` : '*Reason:* Unspecified'}
+—◉ *إذا كنت تعتقد أن هذا خطأ ولديك دليل، فيمكنك الاتصال بمالك الروبوت لاستئناف التعليق.* —◉ *التواصل مع مالكه:* wa.me/201067684684
+╚═════════════════════╝
                `.trim();
               m.reply(messageText);
               user.bannedMessageCount++;
@@ -1200,7 +1200,7 @@ const messageText = `
             if (user.commandCount === 2) {
               const remainingTime = Math.ceil((user.lastCommandTime + 5000 - Date.now()) / 1000);
               if (remainingTime > 0) {
-                const messageText = `*[ â„¹ï¸ڈ ] ط§ظ†طھط¸ط± ${remainingTime} ط«ظˆط§ظ†ظٹ ظ‚ط¨ظ„ ط§ط³طھط®ط¯ط§ظ… ط£ظ…ط± ط¢ط®ط±*`;
+                const messageText = `*[ ℹ️ ] انتظر ${remainingTime} ثواني قبل استخدام أمر آخر*`;
                 m.reply(messageText);
                 return;
               } else {
@@ -1266,11 +1266,11 @@ const messageText = `
           m.exp += xp;
         }
         if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-          mconn.conn.reply(m.chat, `*[ â„¹ï¸ڈ ] ظ„ظ‚ط¯ ظ†ظپط¯ ط§ظ„ظ…ط§ط³ ط§ظ„ط®ط§طµ ط¨ظƒطŒ ظٹظ…ظƒظ†ظƒ ط´ط±ط§ط، ط§ظ„ظ…ط²ظٹط¯ ط¨ط§ط³طھط®ط¯ط§ظ… ط§ظ„ط£ظ…ط±: ${usedPrefix}buyall*`, m);
+          mconn.conn.reply(m.chat, `*[ ℹ️ ] لقد نفد الماس الخاص بك، يمكنك شراء المزيد باستخدام الأمر: ${usedPrefix}buyall*`, m);
           continue; 
         }
         if (plugin.level > _user.level) {
-          mconn.conn.reply(m.chat, `*[ â„¹ï¸ڈ ] It is required to have the level ${plugin.level}  to be able to use the command. Your current level is${_user.level},use the command  ${usedPrefix}lvl to raise your level with XP.*`, m);
+          mconn.conn.reply(m.chat, `*[ ℹ️ ] It is required to have the level ${plugin.level}  to be able to use the command. Your current level is${_user.level},use the command  ${usedPrefix}lvl to raise your level with XP.*`, m);
           continue; 
         }
         const extra = {
@@ -1313,7 +1313,7 @@ const messageText = `
               /* for (const [jid] of global.reportes_solicitudes.filter(([number]) => number)) {
                 const data = (await conn.onWhatsApp(jid))[0] || {};
                 if (data.exists) {
-                  await m.reply(`*[ âڑ ï¸ڈ ً‌ڑپً‌™´ً‌™؟ً‌™¾ً‌ڑپً‌ڑƒً‌™´ ً‌™³ً‌™´ ً‌™²ً‌™¾ً‌™¼ً‌™°ً‌™½ً‌™³ً‌™¾ ً‌™²ً‌™¾ً‌™½ ً‌™µً‌™°ً‌™»ً‌™»ً‌™¾ً‌ڑ‚ âڑ ï¸ڈ ]*\n\n*â€”â—‰ ً‌™؟ً‌™»ً‌ڑ„ً‌™¶ً‌™¸ً‌™½:* ${m.plugin}\n*â€”â—‰ ً‌ڑ„ً‌ڑ‚ً‌ڑ„ً‌™°ً‌ڑپً‌™¸ً‌™¾:* ${m.sender}\n*â€”â—‰ ً‌™²ً‌™¾ً‌™¼ً‌™°ً‌™½ً‌™³ً‌™¾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[â‌—] ً‌ڑپً‌™´ً‌™؟ً‌™¾ً‌ڑپً‌ڑƒً‌™´ً‌™»ً‌™¾ ً‌™°ً‌™» ً‌™²ً‌ڑپً‌™´ً‌™°ً‌™³ً‌™¾ً‌ڑپ ً‌™³ً‌™´ً‌™» ً‌™±ً‌™¾ً‌ڑƒ ً‌™؟ً‌™°ً‌ڑپً‌™° ً‌™³ً‌™°ً‌ڑپً‌™»ً‌™´ ً‌ڑ„ً‌™½ً‌™° ً‌ڑ‚ً‌™¾ً‌™»ً‌ڑ„ً‌™²ً‌™¸ً‌™¾ً‌™½, ً‌™؟ً‌ڑ„ً‌™´ً‌™³ً‌™´ ً‌ڑ„ً‌ڑ‚ً‌™°ً‌ڑپ ً‌™´ً‌™» ً‌™²ً‌™¾ً‌™¼ً‌™°ً‌™½ً‌™³ً‌™¾ #reporte*`.trim(), data.jid);
+                  await m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.plugin}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid);
                 }
               }*/
               const md5c = fs.readFileSync('./plugins/' + m.plugin);
@@ -1339,7 +1339,7 @@ const messageText = `
             }
           }
           if (m.limit) {
-            m.reply('*[ ًں’ژ ] Will be used' + +m.limit + ' diamond(s) (limits).*');
+            m.reply('*[ 💎 ] Will be used' + +m.limit + ' diamond(s) (limits).*');
           }
         }
         break;
@@ -1440,7 +1440,7 @@ export async function participantsUpdate({id, participants, action}) {
               const responseb = await m.conn.groupParticipantsUpdate(id, [user], 'remove');
               if (responseb[0].status === '404') return;
               const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-              await m.conn.sendMessage(id, {text: `*[â‌—] @${user.split('@')[0]} IN THIS GROUP ARE NOT ALLOWED ARABIC OR RARE NUMBERS, FOR WHAT WILL BE TAKEN OUT OF YOU GROUPS*`, mentions: [user]}, {quoted: fkontak2});
+              await m.conn.sendMessage(id, {text: `*[❗] @${user.split('@')[0]} IN THIS GROUP ARE NOT ALLOWED ARABIC OR RARE NUMBERS, FOR WHAT WILL BE TAKEN OUT OF YOU GROUPS*`, mentions: [user]}, {quoted: fkontak2});
               return;
             }
             await m.conn.sendFile(id, apii.data, 'pp.jpg', text, null, false, {mentions: [user]});
@@ -1499,7 +1499,7 @@ export async function callUpdate(callUpdate) {
         const callmsg = await mconn.conn.reply(nk.from, `Hello *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'video calls' : 'calls'} are not allowed, you will be blocked.\n-\n If you accidentally called contact my creator to unblock you!`, false, {mentions: [nk.from]});
         // let data = global.owner.filter(([id, isCreator]) => id && isCreator)
         // await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;EL FARA3NA;;;\nFN:BOT\nORG:NOUREDDINE\nTITLE:\nitem1.TEL;waid=201067684684:201067684684\nitem1.X-ABLabel:noureddine\nX-WA-BIZ-DESCRIPTION:[â‌—] contact noureddine ouafy\nEND:VCARD`;
+        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;EL FARA3NA;;;\nFN:BOT\nORG:NOUREDDINE\nTITLE:\nitem1.TEL;waid=201067684684:201067684684\nitem1.X-ABLabel:noureddine\nX-WA-BIZ-DESCRIPTION:[❗] contact noureddine ouafy\nEND:VCARD`;
         await mconn.conn.sendMessage(nk.from, {contacts: {displayName: 'EL FARA3NA', contacts: [{vcard}]}}, {quoted: callmsg});
         await mconn.conn.updateBlockStatus(nk.from, 'block');
       }
@@ -1520,12 +1520,12 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
         if (!msg) return 
 	if (!msg?.isGroup) return 
 	const antideleteMessage = `
-â”ڈâ”پâ”پâ”پâ”پâ”پâ”پâ”پâ”پâ”پâ¬£  ً‌ک¼ً‌™‰ً‌™ڈً‌™„ ً‌ک؟ً‌™€ً‌™‡ً‌™€ً‌™ڈً‌™€  â¬£â”پâ”پâ”پâ”پâ”پâ”پâ”پâ”پâ”پ
-*â–  User:* @${participant.split`@`[0]}
-*â–  Hour:* ${time}
-*â–  Date:* ${date}
-*â–  Sending the deleted message...* *â–  To disable this feature, type the command:* *â€”â—‰ #disable antidelete*
-â”—â”پâ”پâ”پâ”پâ”پâ”پâ”پâ”پâ”پâ¬£  ً‌ک¼ً‌™‰ً‌™ڈً‌™„ ً‌ک؟ً‌™€ً‌™‡ً‌™€ً‌™ڈً‌™€  â¬£â”پâ”پâ”پâ”پâ”پâ”پâ”پâ”پâ”پ`.trim();
+┏━━━━━━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━━━━━━
+*■ User:* @${participant.split`@`[0]}
+*■ Hour:* ${time}
+*■ Date:* ${date}
+*■ Sending the deleted message...* *■ To disable this feature, type the command:* *—◉ #disable antidelete*
+┗━━━━━━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━━━━━━`.trim();
         await mconn.conn.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
         mconn.conn.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
@@ -1535,19 +1535,19 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-    rowner: '*ظپظ‚ط· ط§ظ„ظ…ط§ظ„ظƒ* â€¢ ظٹظ…ظƒظ† ط§ط³طھط®ط¯ط§ظ… ظ‡ط°ط§ ط§ظ„ط£ظ…ط± ظپظ‚ط· ظ…ظ† ظ‚ط¨ظ„ *ظ…ط§ظ„ظƒ ط§ظ„ط¨ظˆطھ*',
-        owner: '*ظپظ‚ط· ط§ظ„ظ…ط§ظ„ظƒ* â€¢ ظٹظ…ظƒظ† ط§ط³طھط®ط¯ط§ظ… ظ‡ط°ط§ ط§ظ„ط£ظ…ط± ظپظ‚ط· ظ…ظ† ظ‚ط¨ظ„ *ظ…ط§ظ„ظƒ ط§ظ„ط¨ظˆطھ*',
-        mods: '*ظپظ‚ط· ط§ظ„ظ…ط´ط±ظپظٹظ†* â€¢ ظ‡ط°ظ‡ ط§ظ„ظˆط¸ظٹظپط© ظ…ط®طµطµط© ظپظ‚ط· ظ„ظ€ *ظ…ط´ط±ظپظٹ ط§ظ„ط¨ظˆطھ*',
-        premium: '*ظپظ‚ط· ظ„ظ„ظ…ط´طھط±ظƒظٹظ† ط§ظ„ظ…ظ…ظٹط²ظٹظ†* â€¢ ظٹظ…ظƒظ† ط§ط³طھط®ط¯ط§ظ… ظ‡ط°ط§ ط§ظ„ط£ظ…ط± ظپظ‚ط· ظ…ظ† ظ‚ط¨ظ„ *ط£ط¹ط¶ط§ط، ظ…ظ…ظٹط²ظٹظ†*',
-        group: '*ط¯ط±ط¯ط´ط© ط¬ظ…ط§ط¹ظٹط©* â€¢ ظٹظ…ظƒظ† ط§ط³طھط®ط¯ط§ظ… ظ‡ط°ط§ ط§ظ„ط£ظ…ط± ظپظ‚ط· ظپظٹ ط§ظ„ظ…ط¬ظ…ظˆط¹ط§طھ',
-        private: '*ط¯ط±ط¯ط´ط© ط®ط§طµط©* â€¢ ظٹظ…ظƒظ† ط§ط³طھط®ط¯ط§ظ… ظ‡ط°ط§ ط§ظ„ط£ظ…ط± ظپظ‚ط· ظپظٹ *ط§ظ„ط¯ط±ط¯ط´ط© ط§ظ„ط®ط§طµط© ظ„ظ„ط¨ظˆطھ*',
-        admin: '*ظپظ‚ط· ط§ظ„ظ…ط´ط±ظپظٹظ†* â€¢ ظ‡ط°ط§ ط§ظ„ط£ظ…ط± ظ…ط®طµطµ ظپظ‚ط· ظ„ظ€ *ظ…ط´ط±ظپظٹ ط§ظ„ظ…ط¬ظ…ظˆط¹ط©*',
-        botAdmin: '*ظپظ‚ط· ظ…ط´ط±ظپ ط§ظ„ط¨ظˆطھ* â€¢ ظٹط¬ط¨ ط£ظ† ط£ظƒظˆظ† *ظ…ط´ط±ظپظ‹ط§* ظ„ط§ط³طھط®ط¯ط§ظ… ظ‡ط°ط§ ط§ظ„ط£ظ…ط±',
-        unreg: '*ط£ظ†طھ ط؛ظٹط± ظ…ط³ط¬ظ„ ط¨ط¹ط¯* â€¢ ط³ط¬ظ‘ظ„ ط§ظ„ط¯ط®ظˆظ„ ظ„ط§ط³طھط®ط¯ط§ظ… ظ‡ط°ظ‡ ط§ظ„ظ…ظٹط²ط© ط¹ط¨ط± ظƒطھط§ط¨ط©:\n\n*/طھط³ط¬ظٹظ„ ط§ط³ظ…ظƒ.ط¹ظ…ط±ظƒ*\n\nًں“Œظ…ط«ط§ظ„: */طھط³ط¬ظٹظ„ Mohamed.17*',
-        restrict: '*ط§ظ„ظ‚ظٹظˆط¯ ظ…ط¹ط·ظ„ط©* â€¢ ظ‡ط°ظ‡ ط§ظ„ظ…ظٹط²ط© *ظ…ط¹ط·ظ„ط©*',
+    rowner: '*[ ℹ️ ] This command can only be used by the bot owner.*',
+    owner: '*[ ℹ️ ] This command can only be used by the bot owner.*',
+    mods: '*[ ℹ️ ] This command can only be used by moderators and the bot owner.*',
+    premium: '*[ ℹ️ ] This command can only be used by premium users and the bot owner.*',
+    group: '*[ ℹ️ ] This command can only be used in groups.*',
+    private: '*[ ℹ️ ] This command can only be used in the bot s private chat.*',
+    admin: '*[ ℹ️ ] This command can only be used by group administrators.*',
+    botAdmin: '*[ ℹ️ ] To use this command it is necessary that the bot be an administrator of the group.*',
+    unreg: '*[ ℹ️ ] To use this command you must be registered.*\n\n*[ 💡 ] Use the command:* _#verify name.age_ *to register.*',
+    restrict: '*[ ℹ️ ] This command was disabled by the bot owner.*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
-  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '*[ âڑ  ] Warning*', body: 'ELFARA3NABOT', thumbnail: imagen1, sourceUrl: 'https://instagram.com/mo_shoker'}}}}, aa);
+  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '*[ ⚠ ] Warning*', body: 'ELFARA3NABOT', thumbnail: imagen1, sourceUrl: 'https://instagram.com/mo_shoker'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
 };
 
