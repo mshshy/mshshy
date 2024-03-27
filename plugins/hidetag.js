@@ -20,7 +20,7 @@ const fkontak = {
     }
 handler.help = ['hidetag']
 handler.tags = ['owner']
-handler.command = /^(hidetag)$/i
+handler.command = /^(hidetag|مخفي)$/i
 
 handler.group = true
 handler.admin = true
